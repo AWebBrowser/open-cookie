@@ -2,10 +2,21 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<h1 id="numberOfCookies"></h5>
-	<button id="createCookies" type="button" onclick="addCookie();">Click For Cookies</button>
+	<h1>Cookie Clicker V0.01</h1>
+ 	 <input type="text" id="numberOfCookies" value="0" class="rainbow" readonly="readonly"/>
+ 	 <button onclick="incrementValue()" value="Increment Value" class="rainbow"/>Get Cookies</button>
+	<script type="text/javascript">
+		function incrementValue()
+	{
+    	var value = parseInt(document.getElementById('numberOfCookies').value, 10);
+    	value = isNaN(value) ? 0 : value;
+    	value++;
+    	document.getElementById('numberOfCookies').value = value;
+	}
+	</script>
+	<script type="text/javascript" href="app.js"></script>
 </body>
 </html>
