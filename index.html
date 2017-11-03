@@ -9,14 +9,16 @@
  	 <input type="text" id="numberOfCookies" value="0" class="rainbow" readonly="readonly"/>
  	 <button onclick="incrementValue()" value="Increment Value" class="rainbow"/>Get Cookies</button>
 	<script type="text/javascript">
+	var value = parseInt(document.getElementById('numberOfCookies').value, 10);
 		function incrementValue()
 	{
-    	var value = parseInt(document.getElementById('numberOfCookies').value, 10);
     	value = isNaN(value) ? 0 : value;
     	value++;
     	document.getElementById('numberOfCookies').value = value;
 	}
+	if(value == 256){
+	   console.log("");
+	}
 	</script>
-	<script type="text/javascript" href="app.js"></script>
 </body>
 </html>
