@@ -1,7 +1,3 @@
-body{
-  text-align: center;
-  background-color: ##4c4c4c;
-}
 /* Taken from https://codepen.io/beben-koben/pen/gfuvc, I'm not good at css :( */
 .rainbow {
 -webkit-animation:rainbow 2.5s infinite;
@@ -62,3 +58,13 @@ animation:rainbow 2.5s infinite;
 100% {color: #ff0080;}
 }
 /* The rest is my code <3, but it you can modify it to your liking :D*/
+body{
+  text-align: center;
+  background-color: ##4c4c4c;
+}
+input{
+	color:black;
+}
+button{
+	color:transparent;
+}
