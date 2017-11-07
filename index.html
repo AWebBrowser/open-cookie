@@ -7,20 +7,9 @@
 <body>
 	<h1>Cookie Clicker V0.01</h1>
  	 <input type="button" id="numberOfCookies" value="0" class="rainbow" readonly="readonly" disabled="true"/>
- 	 <!-- Added so no one could edit the button :) -->
+ 	 <!-- Added so no one could press the button :) -->
  	 <button onclick="incrementValue()" value="Increment Value" class="rainbow"/>Get Cookies</button>
-	<script type="text/javascript">
-		var value = parseInt(document.getElementById('numberOfCookies').value, 10);
-		setInterval(incrementPerSecond,1000);
-		function incrementValue()
-	{
-    	value = isNaN(value) ? 0 : value;
-    	value++;
-    	document.getElementById('numberOfCookies').value = value;
-	}
-		function incrementPerSecond() {
-			return value = value + 1;
-		}
-	</script>
+ 	 <p id="Demo"></p>
+	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
