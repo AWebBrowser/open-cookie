@@ -5,6 +5,3 @@ function incrementValue(){
     	value++;
     	document.getElementById('numberOfCookies').value = value;
 	}
-function incrementPerSecond() {
-	return incrementValue();
-}
