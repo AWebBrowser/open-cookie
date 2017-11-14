@@ -68,3 +68,9 @@ input{
 button{
 	color:black;
 }
+.addClicks{
+	text-align:left;
+}
+.addClicksPerSeconds{
+	text-align:right;
+}
