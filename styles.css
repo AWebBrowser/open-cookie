@@ -60,7 +60,7 @@ animation:rainbow 2.5s infinite;
 /* The rest is my code <3, but it you can modify it to your liking :D*/
 body{
   text-align: center;
-  background-color: ##4c4c4c;
+  background-color: #4c4c4c;
 }
 input{
 	color:black;
@@ -73,4 +73,37 @@ button{
 }
 .addClicksPerSeconds{
 	text-align:right;
+}
+.save:hover{
+
+}
+.warning:hover{
+	-webkit-animation: warning 5s infinite;
+	border-radius: 10;
+}
+@-webkit-keyframes save{
+	0% { color: #f22626; opacity: 1;}
+	10% { color: #f22626; opacity: 0.9; }
+	20% { color:#f22626; opacity: 0.8;}
+	30% {color:#f22626; opacity: 0.7;}
+	40% { color:#f22626; opacity: 0.6;}
+	50% { color:#f22626; opacity: 0.5;}
+	60% { color:#f22626; opacity: 0.4;}
+	70% { color:#f22626; opacity: 0.3;}
+	80% { color:#f22626; opacity: 0.2}
+	90% { color:#f22626; opacity: 0.1}
+	100% { color:#f22626; opacity: 0.6}a
+}
+@-webkit-keyframes warning{
+	0% { color: #f22626; opacity: 1;}
+	10% { color: #f22626; opacity: 0.9; }
+	20% { color:#f22626; opacity: 0.8;}
+	30% {color:#f22626; opacity: 0.7;}
+	40% { color:#f22626; opacity: 0.6;}
+	50% { color:#f22626; opacity: 0.5;}
+	60% { color:#f22626; opacity: 0.4;}
+	70% { color:#f22626; opacity: 0.3;}
+	80% { color:#f22626; opacity: 0.2}
+	90% { color:#f22626; opacity: 0.1}
+	100% { color:#f22626; opacity: 0.6}
 }
