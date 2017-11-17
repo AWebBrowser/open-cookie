@@ -9,8 +9,6 @@ var savegame = {
     grandmothers: grandmothers,
     ImpossibleThing: ImpossibleThing
 };
-/* Save Button */ function saveButton(){localStorage.setItem("save",JSON.stringify(savegame));};
-/* Delete Save */ function deleteSave(){localStorage.removeItem("save");};
 
 var savegame = JSON.parse(localStorage.getItem("save"));
 
@@ -20,7 +18,7 @@ function incrementValue(number) {
 }
 /* upgrade method */
 function buyUpg1(){
-	document.getElementById('buyCursor').innerHTML = "Buy a cursor for " + upgradeCost + " cookies";
+	document.getElementById('bC').innerHTML = "Buy a cursor for " + upgradeCost + " cookies";
 	var upgradeCost = Math.floor(10 * Math.pow(1.1, cursors));
 	if (cookies >= upgradeCost) {
 		cursors += 1;
@@ -33,7 +31,7 @@ function buyUpg1(){
 		alert("You do not have enough cookies to buy this upgrade");
 	}
 	console.log("upgradeCost:", upgradeCost)
-	document.getElementById('buyCursor').innerHTML = "Buy a cursor for " + upgradeCost + " cookies"
+	document.getElementById('bC').innerHTML = "Buy a cursor for " + upgradeCost + " cookies";
 	console.log(cursors);
 	console.log(cookies);
 }
