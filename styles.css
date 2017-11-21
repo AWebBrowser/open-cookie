@@ -75,7 +75,7 @@ button{
 	text-align:right;
 }
 .save:hover{
-
+	-webkit-animation: save 5s infinitew;
 }
 .warning:hover{
 	-webkit-animation: warning 5s infinite;
