@@ -32,9 +32,21 @@ function buyUpg1(){
 	}
 	console.log("upgradeCost:", upgradeCost)
 	document.getElementById('bC').innerHTML = "Buy a cursor for " + upgradeCost + " cookies";
-	console.log(cursors);
-	console.log(cookies);
-	console.log(cPS);
+}
+function buyUpg2(){
+	document.getElementById('bC').innerHTML = "Buy a cursor for " + upgradeCost + " cookies";
+	var upgradeCost = Math.floor(10 * Math.pow(1.1, cursors));
+	if (cookies >= upgradeCost) {
+		cursors += 1;
+		cookies -= upgradeCost;
+		document.getElementById('aOC').innerHTML = cursors;
+		document.getElementById('nOC').value = cookies;
+		upgradeCost = Math.floor(10 * Math.pow(1.1, cursors));
+		cPS += 0.5;
+	}else if(upgradeCost >= cookies){
+		alert("You do not have enough cookies to buy this upgrade");
+	}
+	console.log("upgradeCost:", upgradeCost)
 }
 /* cPS  Method */
 setInterval(function(){
