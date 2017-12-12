@@ -22,6 +22,15 @@ function deleteSave(){
 	ImpossibleThing = 0;
 	console.log("Save Sucsessfully deleted.")
 }
+function light(){
+	document.getElementsByTagName("body")[0].style.background = "#FFFFFF";
+	document.getElementsByTagName("h1")[0].style.color = "#000000";
+	document.getElementsByTagName("button")[0].style.color = "#000000";
+}
+function dark(){
+	document.getElementsByTagName("body")[0].style.background = "#000000";
+	document.getElementsByTagName("h1")[0].style.color = "#FFFEEF";
+}
 function incrementValue(number) {
 	cookies += number;
 	return document.getElementById('nOC').value = cookies;
@@ -82,6 +91,13 @@ function easterEgg(number){
 	alert("You have found easter egg number " + number + "!");
 	alert("A 50% boost has been added to your clicks!");
 	cPC = cPC * 1.5;
-
 };
+/*_convert to millions, billions , etc._*/
+var digits = new Number(cookies).toString().length;
+if (digits >= 7) {cookies = cookies / 1000000 + "millions"} else {}
+
+/* Easter Egg for god mode*/
+function godMode() {
+	cookies = 999999999999999999999999999999;
+}
 if (navigator.onLine = false) {alert("Hi, Open-Cookie is not working, or you are offline and this is a remote copy... Anyways, your save data will NOT be saved.");}
