@@ -75,7 +75,7 @@ button{
 	text-align:right;
 }
 .save:hover{
-	-webkit-animation: save 5s infinitew;
+	-webkit-animation: save 5s infinite;
 }
 .warning:hover{
 	-webkit-animation: warning 5s infinite;
@@ -106,4 +106,20 @@ button{
 	80% { color:#f22626; opacity: 0.2}
 	90% { color:#f22626; opacity: 0.1}
 	100% { color:#f22626; opacity: 0.6}
+}
+@-webkit-keyframes easterEgg{
+	0% {opacity: 0.1;}
+	1% {opacity: 0.2;}
+	3%{opacity: 0.3;}
+	4%{opacity: 0.4;}
+	5%{opacity: 0.5;}
+	6%{opacity: 0.6;}
+	7%{opacity: 0.7;}
+	8%{opacity: 0.8;}
+	9%{opacity: 0.9;}
+	10%{opacity: 1.0;}
+}
+#easterEggOne:hover(){
+	opacity: 0;
+	-webkit-animation: easterEgg;
 }
