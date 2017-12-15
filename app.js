@@ -100,4 +100,5 @@ if (digits >= 7) {cookies = cookies / 1000000 + "millions"} else {}
 function godMode() {
 	cookies = 999999999999999999999999999999;
 }
+/* Make sure you are onLine / offLine */
 if (navigator.onLine = false) {alert("Hi, Open-Cookie is not working, or you are offline and this is a remote copy... Anyways, your save data will NOT be saved.");}
