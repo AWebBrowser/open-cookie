@@ -12,21 +12,7 @@ var savegame = {
     ImpossibleThing: ImpossibleThing
 };
 var savegame = JSON.parse(localStorage.getItem("save"));
-function saveButton(){}
-function deleteSave(){
-	cPC = 1;
-	cPS = 0;
-	cookies = 0;
-	cursors = 0;
-	grandmothers = 0;
-	ImpossibleThing = 0;
-	console.log("Save Sucsessfully deleted.")
-}
-function light(){
-	document.getElementsByTagName("body")[0].style.background = "#FFFFFF";
-	document.getElementsByTagName("h1")[0].style.color = "#000000";
-	document.getElementsByTagName("button")[0].style.color = "#000000";
-}
+
 function dark(){
 	document.getElementsByTagName("body")[0].style.background = "#000000";
 	document.getElementsByTagName("h1")[0].style.color = "#FFFEEF";
@@ -93,12 +79,12 @@ function easterEgg(number){
 	cPC = cPC * 1.5;
 };
 /*_convert to millions, billions , etc._*/
-var digits = new Number(cookies).toString().length;
-if (digits >= 7) {cookies = cookies / 1000000 + "millions"} else {}
 
 /* Easter Egg for god mode*/
 function godMode() {
-	cookies = 999999999999999999999999999999;
+	cookies = 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+	console.log("GOD MODE ACTIVATED");
+	window.alert("Hello, I am the god of cookies, I have blessed you with developer-like cookies, use them wisely...")
 }
 /* Make sure you are onLine / offLine */
 if (navigator.onLine = false) {alert("Hi, Open-Cookie is not working, or you are offline and this is a remote copy... Anyways, your save data will NOT be saved.");}

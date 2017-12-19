@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Cookie');
 /* Taken from https://codepen.io/beben-koben/pen/gfuvc, I'm not good at css :( */
 .rainbow {
 -webkit-animation:rainbow 2.5s infinite;
@@ -61,18 +64,16 @@ animation:rainbow 2.5s infinite;
 body{
   text-align: center;
   background-color: #ffffff;
+  font-size: 18px;
 }
 input{
 	color:black;
+	font-family: "Indie Flower"
 }
 button{
 	color:black;
-}
-.addClicks{
-	text-align:left;
-}
-.addClicksPerSeconds{
-	text-align:right;
+	font-family: "Cookie";
+	font-size: 22px;
 }
 .save:hover{
 	-webkit-animation: save 5s infinite;
