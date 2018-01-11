@@ -6,4 +6,7 @@ That's really it
 ##### css from https://codepen.io/beben-koben/pen/gfuvc however it is slightly tweaked so the ```hover``` effect is removed, and is slower so it won't destroy eyeballs.
 ##Edit 12/11/2017 (V0.03)
 
-####Added clicks per second, may add developer mode :) ¯\\_(ツ)_/¯
+####Added clicks per second, may add developer mode :) ¯\\_\(ツ)\_/¯
+##Edit 1/11/2018 (V0.04_HotFix01)
+
+#### Added Fonts, thinking of making it customizabl for `x` amount of cookies
