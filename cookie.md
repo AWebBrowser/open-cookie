@@ -9,4 +9,4 @@ That's really it
 ####Added clicks per second, may add developer mode :) ¯\\_\(ツ)\_/¯
 ##Edit 1/11/2018 (V0.04_HotFix01)
 
-#### Added Fonts, thinking of making it customizabl for `x` amount of cookies
+#### Added Fonts, thinking of making it customizable for `x` amount of cookies
